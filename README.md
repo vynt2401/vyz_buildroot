@@ -18,7 +18,7 @@ Dự án này sử dụng công cụ **Buildroot** để cấu hình, biên dị
 ---
 
 ## 📂 Cấu Trúc Thư Mục Dự Án
-
+```
 text
 vyz_buildroot/
 ├── buildroot-vexpress/       # Mã nguồn Buildroot chính (Sub-directory)
@@ -31,7 +31,7 @@ vyz_buildroot/
 │   └── .config               # File cấu hình Buildroot hiện tại
 ├── scripts/                  # Các script tự động hóa (QEMU boot, flash SD card)
 └── README.md                 # Tài liệu hướng dẫn này
-
+```
 ## Hướng Dẫn Cài Đặt & Biên Dịch ##
 1. Chuẩn bị môi trường (Host OS)
 Khuyến khích sử dụng hệ điều hành Fedora Linux hoặc Ubuntu/Debian thông qua WSL2 trên Windows 11. Cài đặt các gói phụ thuộc cần thiết cho Buildroot:
