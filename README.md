@@ -19,7 +19,7 @@ Dự án này sử dụng công cụ **Buildroot** để cấu hình, biên dị
 
 ## 📂 Cấu Trúc Thư Mục Dự Án
 
-```text
+text
 vyz_buildroot/
 ├── buildroot-vexpress/       # Mã nguồn Buildroot chính (Sub-directory)
 │   ├── board/                # Cấu hình đặc thù cho bo mạch (QEMU / Orange Pi)
@@ -75,7 +75,7 @@ vexpress-v2p-ca9.dtb: Device Tree Blob cho bo mạch giả lập.
 ### Hướng Dẫn Chạy Giả Lập (QEMU)
 Để kiểm tra hệ điều hành vừa build mà không cần phần cứng thật, bạn có thể khởi chạy thông qua QEMU ARM:
 
-Bash
+```
 qemu-system-arm -M versatilepb \
     -kernel output/images/zImage \
     -dtb output/images/vexpress-v2p-ca9.dtb \
@@ -83,6 +83,7 @@ qemu-system-arm -M versatilepb \
     -append "root=/dev/sda console=ttyAMA0,115200" \
     -net nic -net user \
     -nographic
+```
 Nhấn Ctrl + A rồi thả ra, sau đó nhấn X nếu muốn thoát khỏi màn hình giả lập QEMU.
 
 
