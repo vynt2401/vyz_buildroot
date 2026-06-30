@@ -1,0 +1,5 @@
+buildroot-vexpress/output/
+buildroot-vexpress/build/
+buildroot-vexpress/host/
+buildroot-vexpress/.config
+buildroot-vexpress/.config.old
